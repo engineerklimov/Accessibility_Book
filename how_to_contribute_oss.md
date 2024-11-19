@@ -48,11 +48,26 @@ Lets donwload source code from mine axe core fork and try some basic operations.
 
 <img src="repo_clone.png"> 
 
-### Restore packages
+### Restore packages and build project
+Next step after you got axe core code locally is restore NPM packages. Installed packages and basic commands for project in NodeJs usually specified on package.json. As i explained before big dependency tree is a big bag to carry. I mentioned also opensource is best efforts software os axe core developers reduced their production dependencies to 0. If you look at manifest there is only `devDependencies`, external code that goes with your Js app located at `dependencies` which is missing here. That means maintainers implemented all functions down to browser code to make axe-core lib tiny. 
 
-### Build command
+<img src="package_json.png">
+
+Lets try to build it. In VScode open project folder and open terminal if that not open yet. Execute following commands
+1. Restore dependencies `npm i`
+2. Build project `npm run build`
+
+After `npm i` you should see following output
+
+<img src="npm_i.png">
+
+Valid `npm run build` output
+
+<img src="npm_build.png">
 
 ## Find contribution target
+
+
 
 ## Prepare pull request
 
