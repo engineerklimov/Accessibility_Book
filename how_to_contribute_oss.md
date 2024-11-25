@@ -1,5 +1,7 @@
 # Contribute to (OSS) Open source software
-All of us using OSS, more over most of the software we use is based on oss. Routine process of development is picking packages from platform sources for example npm if you are developing java script program and writing some ligth glue code for that to make work your app. This is nature of software development because of one the base pricinples "DRY" - do not repeat yoursesf. Folloiwng that principle developers try to reuse every piece of code that is repeated. It is become hard to find this pieces because many developers already did that work. Also when piece of software is done by developer who realy love his work it is polished, and done with best efforts. With all that things in mind, it becomes really hard to put something valueable to public or contribute to project that is already used by many developers for person without years of developement experience or someone from IT but non developers like software testrs or designers. While this stair is high for beginner, such contributon may become a good starter for developer carier. It also looks very impressive in CV because all developers have some kind of pet projects but iusually they to shy to put it on public. Purpose of this guide is to help beginners to step on that stair.
+All of us using OSS, more over most of the software we use is based on oss. Routine process of development is picking packages from platform sources for example npm if you are developing java script program and writing some ligth glue code for that to make work your app. This is nature of software development because of one the base pricinples "DRY" - do not repeat yoursesf. Folloiwng that principle developers try to reuse every piece of code that is repeated. It is become hard to find this pieces because many developers already did that work. Also when piece of software is done by developer who realy love his work it is polished, and done with best efforts. With all that things in mind, it becomes really hard to put something valueable to public or contribute to project that is already used by many developers for person without years of developement experience or someone from IT but non developers like software testrs or designers. Another hand that pushed me to that direction is my colleges expertise, In conversations with a good friend of mine who is HR and one of the developers, who frequently conducts technical interviews I got some insight regarding how public work may transform interview process. From their experience OSS contribution is a rare, it will raise curiosity for sure. You may shift interview towards your area of expertise and leave a good impression even if you will be innacurate in your answers in required areas.
+
+While this stair is high for beginner, such contributon may become a good starter for developer carier. It also looks very impressive in CV because all developers have some kind of pet projects but iusually they to shy to put it on public. Purpose of this guide is to help beginners to step on that stair.
 
 ## Choosing tech and project
 From practical point of view it is alway better to stay with most popular technology because of larger communit there will be large amout of edge cases solved, bigger toolset and more documentatios, it is till humans writing code so more humans more code =). According to [github 2024 octoverse](https://github.blog/news-insights/octoverse/octoverse-2024/) Python beats JavaScript as most popular language. 
@@ -67,6 +69,13 @@ Valid `npm run build` output
 
 ## Find contribution target
 
+Where to look for? There is 3 sources: 
+
+### Repository issues
+
+This is worklog for project it also contais reported bugs and etc, usually issues marked with labels. It is better to check entire [list](https://github.com/dequelabs/axe-core/labels), I found `good first issue` and `help wanted` that may fit for my porposes. There is few on each label. I quickly checked them and found one that is pretty well descripted I had no idea what need to be done technically but atleast I undestood requirements. Maintainers pointed to files where this changes need to be done, this is already part of techical work since I have no idea about project structure. I decided to spent more time and look for something completely dumb to contribute, just to try.
+
+### Past contributions from non maintainers
 
 
 ## Prepare pull request
