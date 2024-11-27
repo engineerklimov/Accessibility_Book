@@ -77,7 +77,17 @@ This is worklog for project it also contais reported bugs and etc, usually issue
 
 ### Past contributions from non maintainers
 
+Another place to look is [closed pull requests](https://github.com/dequelabs/axe-core/pulls?q=is%3Apr+is%3Aclosed). You need to filter out work done by main project developers as it is migth be too complex to follow. I cheked first 3 pages and found closed pull request that is very promising for me [chore: Update locale de.json](https://github.com/dequelabs/axe-core/pull/4525). It is a localization improvement for error messages, usually localisations is static resources for applications that contains collections of messages templates. That templates used in code to show messages in different languages. It is searial change so I can look at any existing and repeat it, I also found a good instruction and main repository document [readme.md](https://github.com/dequelabs/axe-core?tab=readme-ov-file#localization). So that will be my task: 'Add ru locale'
 
 ## Prepare pull request
+
+Lets add a nex locale for axe-core. First step is to make our own repository version. There is two ways:
+
+1. You can make branch in the main repository. Click on left bottom corner on current branch name `develop`, choose `Create new branch...` click and type branch name. It is better to not use special characters in branch names.
+2. There migth be polisies on branch names or new branches may be restricted for everyone. In such case you can create a fork from main repository and 
+
+<img src="make_branch.png">
+
+
 
 ## Maintainers review and merge
