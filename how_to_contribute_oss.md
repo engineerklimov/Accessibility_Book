@@ -1,117 +1,125 @@
-# Contribute to (OSS) Open source software
+# Contribute to (OSS) Open Source Software
 
-All of us use OSS; moreover, most of the software we use is based on OSS. A routine process of development is picking packages from platform sources, for example, npm, if you are developing a JavaScript program, and writing some light glue code to make your app work. This is the nature of software development because of one of the base principles, **"DRY" — do not repeat yourself**. Following that principle, developers try to reuse every piece of code that is repeated. 
+We all use OSS, and, more importantly, most of the software we rely on is built on OSS. A typical part of development involves picking packages from platform sources like npm if you're working on a JavaScript program, and adding some light glue code to make everything work together. This approach stems from one of the core principles of software development: **"DRY" — don’t repeat yourself**. Developers aim to reuse as much code as possible to avoid reinventing the wheel. 
 
-It has become hard to find these pieces because many developers have already done that work. Also, when a piece of software is done by a developer who really loves their work, it is polished and done with the best efforts. 
+However, because so many developers have already done this work, finding opportunities to contribute can feel like searching for a needle in a haystack. And when you do find a gap, it's often daunting to share your work in public, especially on projects already trusted and used by many.
 
-With all these things in mind, it becomes really hard to put something valuable in public or contribute to a project that is already used by many developers, even for a person with a few years of development experience (middle or senior developers) or experts from close areas who have never contributed directly. 
+This challenge is real, even for developers with several years of experience (middle or senior level), or experts from adjacent fields who have never contributed directly to OSS. But that shouldn’t stop you.
 
-Another reason that pushed me in that direction is my colleagues' expertise. In conversations with a good friend of mine, who is HR, and one of the developers who frequently conducts technical interviews, I got some insight regarding how public work may transform the interview process. From their experience, OSS contributions are rare, and they will raise curiosity for sure. You may shift the interview towards your area of expertise and leave a good impression, even if you are inaccurate in your answers in required areas.
+Another thing that pushed me to explore OSS contributions was insight from colleagues. A good friend of mine, who works in HR, and a developer who frequently conducts technical interviews, both emphasized how rare and impactful OSS contributions are. They told me that showcasing public work almost always sparks curiosity in interviews. It’s a great way to steer the conversation toward your strengths and make a lasting impression—even if you're less confident in other areas.
 
-While this "stair" is high, such a step may become a very useful experience. It also looks very impressive in a CV because all developers have some kind of pet projects, but usually, they are too shy to put them in public. The purpose of this guide is to help you step on that stair.
+Contributing to OSS might feel like a steep climb, but it’s worth the effort. It not only enhances your resume but also gives you valuable experience. Many developers have pet projects, but few have the courage to put them in the spotlight. This guide will help you take that first step.
 
 ---
 
-## Choosing tech and project
+## Choosing a Technology and Project
 
-From a practical point of view, it is always better to stay with the most popular technology because of the larger community. There will be a large number of edge cases solved, a bigger toolset, and more documentation; it is still humans writing code, so more humans = more code :).
+From a practical perspective, it’s best to stick with popular technologies. Larger communities mean more solved edge cases, a wider range of tools, and better documentation. It’s still humans writing code, and more people means more shared knowledge. :)
 
-According to [GitHub 2024 Octoverse](https://github.blog/news-insights/octoverse/octoverse-2024/), Python beats JavaScript as the most popular language.
+According to [GitHub 2024 Octoverse](https://github.blog/news-insights/octoverse/octoverse-2024/), Python has surpassed JavaScript as the most popular language.
 
-<img src="github_octoverse_2024.webp"> 
+<img src="github_octoverse_2024.webp">
 
 > *"There are three kinds of lies: lies, damned lies, and statistics."* — Mark Twain  
 > *"TypeScript (TS) is a superset of JavaScript (JS), developed and maintained by Microsoft as an open-source programming language."* — Google  
 
 TypeScript is essentially extended JavaScript—it’s like English text with commas. You can write without commas, and it will still be English text, just less structured.
 
-Looking at the chart, JavaScript and TypeScript might seem like two separate entities, but they’re really the same language. Together, they dominate the ecosystem. So, I wouldn’t say Python has beaten JavaScript.
+Looking at the chart, JavaScript and TypeScript might seem like two separate entities, but they’re really two forms of the same language. Together, they dominate the ecosystem. So, I wouldn’t say Python has truly beaten JavaScript.
 
-According to the logic described above, my choice for OSS contribution will be JavaScript and NodeJs as a platform. My primary area of knowledge is Accessibility tools. I’m also working as a software tester. With this in mind, the best for me would be to contribute to some accessibility tool that is related to testing and written in JavaScript. I know these tools a little, so I will go directly to [axe-core](https://github.com/dequelabs/axe-core). 
+With this in mind, my choice for OSS contribution is JavaScript and NodeJs as a platform. My primary area of expertise is accessibility tools, and I’m also a software tester. Naturally, I decided to contribute to an accessibility tool related to testing, written in JavaScript. I already knew about [axe-core](https://github.com/dequelabs/axe-core), which made it an easy decision. 
 
-You may find this logic too smooth to be true, especially since I’m not showing the research process. It's true that I already knew my target project before I started. However, I still recommend not blindly picking just any project. You need to carefully consider the learning curve; otherwise, it might kill your motivation.
+You might think this reasoning is too smooth, especially since I’m skipping over the research phase. And you’re not wrong—I already had a target project in mind. That said, I still recommend carefully evaluating a project’s learning curve before committing. Otherwise, you might lose motivation halfway through.
 
 ---
 
-## Tools and basics
+## Tools and Basics
 
-For sure, you have to learn the basics to become a developer for this project. They are: 
-- **Git**: *version control systems*
-- **JavaScript**: *programming language*
+Before diving in, you’ll need to learn some basics. Here’s what you’ll need:
+- **Git**: *Version control system*
+- **JavaScript**: *Programming language*
 - **NodeJs**: *JavaScript runtime*
 - **Npm**: *JavaScript package manager*
 - **VSCode**: *Integrated development environment*
 
-You need to download and install these tools on your PC, following the official guides.
+Follow the official guides to download and install these tools on your PC.
 
-From my experience, the best way to learn something is to actually try using it. Some tools are quite straightforward — you don't need to spend hours figuring out how to chop a stick with an axe. A couple of hours of practice might be enough... maybe just a finger or two lost in the process! ;)
+From my experience, the best way to learn something is by doing. Some tools, like VSCode, are very intuitive. You won’t need hours of tutorials to figure out how to chop a stick with an axe—though you might lose a finger or two in the process. ;)
 
 ---
 
 ### Git
 
-You need Git to commit your changes to the source code. Luckily, you don’t have to fully master it — just understanding the basic principles of version control systems is enough. Long story short, you’ll be editing text files alongside other people, and there are plenty of tools to sync your files in one place. Git is the de facto industry standard for this now. 
+Git is essential for committing your changes to the source code. The good news is, you don’t need to become a Git master to contribute. Just understanding the basic principles of version control systems will be enough. Think of it as editing text files with a group of other people—Git helps you synchronize everyone’s work.
 
 ---
 
 ### VSCode
 
-Editing text in Notepad is deadly simple, but you have to use many other tools to make it smooth. A place where all these tools are aggregated is an integrated development environment. We need VSCode to navigate and search in code; it has nice syntax highlighting and text formatting. Also, we can avoid the Git command line.
+Notepad is fine for basic edits, but serious development requires more tools. VSCode is an integrated development environment that brings everything together. It makes navigating and searching through code easy and offers features like syntax highlighting and text formatting. Plus, you can avoid using the Git command line entirely.
 
 ---
 
 ### JavaScript
 
-You have to understand basics like variables, loops, and functions. By the way, you can use any code generation tools, like ChatGPT or its analogs. Personally, I prefer Co-Pilot.
+You should have a basic understanding of variables, loops, and functions. But don’t stress—there are plenty of tools to help you. Personally, I like using Co-Pilot for code suggestions.
 
 ---
 
 ### NPM and NodeJs
 
-While developing software, you need to use other developers’ code. Otherwise, you will write everything from scratch each time you start a project. An easy way is to go to GitHub and copy-paste code from other repositories. But how about the code that other repositories use themselves? 
+To avoid rewriting the same code over and over, developers rely on existing libraries. Tools like NPM (Node Package Manager) simplify sharing and reusing code. In our case, NPM comes bundled with NodeJs.
 
-You need to climb a dependency tree until you reach the very basic runtime platform code. There are tools for code sharing that are usually specific to a platform or language. In our case, it is NPM (Node Package Manager), the default package manager that comes bundled with NodeJs. 
+Think of it like climbing a tree of dependencies. At the top of the tree is your project, but beneath it lies a web of libraries and their own dependencies, each layer building on the one below. You keep climbing down until you reach the very foundation—the runtime platform code. This structure saves time and effort, letting you focus on higher-level logic instead of reinventing basic functionality.
 
-Each package manager comes with some hidden costs. For example, where is the guarantee that, somewhere deep in the dependency graph, there isn’t a package that contains malicious code? This is called a supply chain attack.
+However, this tree isn’t always safe. Somewhere deep in its roots, there could be a package with malicious code. This type of risk is called a supply chain attack, and it’s a challenge every developer should be mindful of.
 
 <img src="dependency_graph_example.webp">
+
 ---
 
 ## Discover Chosen Project
 
-First of all, you need a GitHub account; these days, it’s like Facebook for developers. I already have one: [https://github.com/engineerklimov](https://github.com/engineerklimov). I will create a copy of [axe-core](https://github.com/dequelabs/axe-core); in Git terms, this is called a fork.
+First of all, you need a GitHub account; these days, it’s like Facebook for developers. I already have one: [https://github.com/engineerklimov](https://github.com/engineerklimov). The next step is to create a copy of the project repository—this is called a "fork."
 
-Let’s download the source code from my axe-core fork and try some basic operations. As I explained before, you don’t need to know all Git commands to use it; probably, you can even avoid its shell. Open VSCode and navigate as shown in the picture. In the text field, choose "Clone from GitHub" or copy-paste the repository URL.
+### Step 1: Fork and Clone the Repository
 
-<img src="repo_clone.png"> 
+1. Open the project’s GitHub page (e.g., [axe-core](https://github.com/dequelabs/axe-core)).
+2. Click the **Fork** button in the top-right corner. This creates a copy of the repository in your GitHub account.
+3. Open VSCode and go to the **Source Control** tab.
+4. Click **Clone Repository** and choose **Clone from GitHub** or paste the URL of your fork.
+5. Select a local folder where the code will be saved.
+
+<img src="repo_clone.png">
 
 ---
 
 ### Restore Packages and Build the Project
 
-The next step, after you have the axe-core code locally, is restoring NPM packages. Installed packages and basic commands for the project in NodeJs are usually specified in `package.json`. 
+Once the project is cloned, you need to set up its dependencies and build it. Dependencies in JavaScript projects are managed using a package manager, in this case, NPM. The `package.json` file lists all the dependencies required to run, build, or test the project.
 
-As I explained before, a big dependency tree is a big bag to carry. I also mentioned that open-source is “best effort” software, so axe-core developers reduced their production dependencies to 0. If you look at the manifest, there are only `devDependencies`. External code that goes with your JavaScript app is located in `dependencies`, which is missing here. That means maintainers implemented all functions down to browser code to make the axe-core library tiny. 
+As I mentioned earlier, dependencies form a tree structure, where your project relies on libraries, and those libraries rely on others. However, not all projects handle dependencies the same way. The developers of axe-core have taken an exceptional approach: they reduced all production dependencies to zero. This means the `dependencies` section in `package.json` is empty, and everything the library needs for production has been implemented directly in the code. 
 
-<img src="package_json.png">
+Instead, all external libraries are listed under `devDependencies`, which are only used during development or testing. This is not a common practice, as many libraries depend on third-party packages in production. By doing this, axe-core avoids risks like bloated builds or vulnerabilities in deep dependencies, making the library both lightweight and secure.
 
-Let’s try to build it. In VSCode, open the project folder and open the terminal if it’s not open yet. Execute the following commands:
+Here’s how to set everything up:
 
-1. Restore dependencies:
-   ```bash
-   npm install
-   ```
+1. Open the terminal in VSCode (**View > Terminal**).
+2. Run the following commands:
+   - Restore dependencies:
+     ```bash
+     npm install
+     ```
+   - Build the project:
+     ```bash
+     npm run build
+     ```
 
-2. Build the project:
-   ```bash
-   npm run build
-   ```
-
-After `npm install`, you should see the following output:
+The `npm install` command downloads all the necessary development dependencies and sets up the project. After running it, you should see an output like this:
 
 <img src="npm_i.png">
 
-A valid `npm run build` output:
+The `npm run build` command compiles the project and prepares it for use. A successful output will look like this:
 
 <img src="npm_build.png">
 
@@ -119,101 +127,109 @@ A valid `npm run build` output:
 
 ## Find Contribution Target
 
-Where to look for opportunities? There are three main sources: 
-
----
+Where should you look for a task to contribute to? Here are the three best options:
 
 ### Repository Issues
 
-This is a worklog for the project; it also contains reported bugs and other tasks. Issues are usually marked with labels. It’s better to check the entire [list](https://github.com/dequelabs/axe-core/labels). I found `good first issue` and `help wanted` labels that might fit my purposes. 
+Repository issues are like the project’s to-do list. They include reported bugs, feature requests, and other tasks. Most projects use labels to categorize issues. For example, in [axe-core](https://github.com/dequelabs/axe-core), you’ll find labels like ``good first issue`` or ``help wanted``. These are beginner-friendly and a great place to start.
 
-There are a few in each label. I quickly checked them and found one that is pretty well described. I had no idea what needed to be done technically, but at least I understood the requirements. Maintainers pointed to files where these changes needed to be done, which is already part of the technical work since I had no idea about the project structure. 
+During my search, I found a ``good first issue`` that was well described. The maintainers pointed to specific files and explained what needed to be done, which made it a great starting point for understanding the project’s structure.
 
-I decided to spend more time and look for something completely simple to contribute, just to try.
+However, while continuing to explore, I came across an even simpler task: updating a localization file. This task required minimal technical knowledge and seemed like the perfect opportunity to make my first contribution. I decided to set aside the initial issue as a backup and focused on the localization task instead, as it allowed me to dive right in without overthinking the technical details.
 
 ---
 
 ### Past Contributions from Non-Maintainers
 
-Another place to look is [closed pull requests](https://github.com/dequelabs/axe-core/pulls?q=is%3Apr+is%3Aclosed). You need to filter out work done by main project developers, as it might be too complex to follow. 
+Another great way to find ideas is by reviewing [closed pull requests](https://github.com/dequelabs/axe-core/pulls?q=is%3Apr+is%3Aclosed). Look for contributions from people outside the maintainer team, as these are more likely to be beginner-friendly.
 
-I checked the first three pages and found a closed pull request that is very promising for me: [chore: Update locale de.json](https://github.com/dequelabs/axe-core/pull/4525). It’s a localization improvement for error messages. 
+For example, I found a localization PR: [chore: Update locale de.json](https://github.com/dequelabs/axe-core/pull/4525). Localization tasks often involve adding or improving translations, making them an excellent entry point for new contributors. 
 
-Usually, localizations are static resources for applications that contain collections of message templates. These templates are used in code to show messages in different languages. This is a serial change, so I can look at any existing localization and repeat it. 
+Localization is typically designed as a "serial task": you can look at existing localization files and use them as templates to create or update translations for other languages. This consistency is intentional—it allows translation work to remain isolated from the rest of the code. By keeping translations in dedicated files, projects make it easier for non-technical contributors, such as translators, to work on them without needing to understand the technical details of the project.
 
-I also found good instructions in the repository document [readme.md](https://github.com/dequelabs/axe-core?tab=readme-ov-file#localization). So, that will be my task: "Add ru locale."
+I also found clear instructions in the project’s documentation, which guided me through the steps to add a new locale. This approach isn’t unique to axe-core—many projects handle localization in a similar way. So, if you’re looking to contribute to other projects, localization is a task worth considering, especially if you’re just starting out.
 
 ---
 
-## Prepare Pull Request
+## Prepare a Pull Request
 
-Let’s add a new locale for axe-core. The first step is to make our own repository version. There are two ways:
+Let’s add a new locale for axe-core. Before starting, ensure you’ve already forked the repository as described earlier. In your fork, you have two options for working on your changes:
 
-1. You can make a branch in the main repository. Click on the left bottom corner on the current branch name `develop`, choose **"Create new branch..."**, click, and type the branch name. It’s better to not use special characters in branch names.
-2. There might be policies on branch names, or new branches may be restricted for everyone. In such a case, you can create a fork from the main repository, make your changes, and create a pull request from the fork to the main repo. 
+### Option 1: Work Directly in `main`
+You can make changes directly in the `main` branch of your fork. After committing your changes, you can open a pull request from your fork’s `main` branch to the original repository.
+
+This method is straightforward but has some drawbacks:
+- Any new commits to `main` will be included in the pull request, which can make it harder to isolate specific changes.
+- If you want to work on multiple tasks, managing them in `main` can become messy.
+
+### Option 2: Create a New Branch (Recommended)
+Creating a separate branch for your changes is a better practice. Here’s how to do it:
+1. Open the project in VSCode.
+2. Click on the current branch name (e.g., `main`) in the bottom-left corner.
+3. Select `Create New Branch`, type a meaningful name (e.g., `add-ru-locale`), and press Enter.
+
+This approach keeps your changes isolated and makes it easier to collaborate and respond to feedback during the pull request review process.
 
 <img src="make_branch.png">
 
 ---
 
-### Add Changes
+### Important Notes on Branch Names
+When naming branches, avoid using spaces or special characters. Stick to alphanumeric characters, dashes (`-`), or underscores (`_`). Special symbols can cause compatibility issues in version control systems or build pipelines.
 
-The change itself is not complex. I followed instructions in the repository root and called:
+---
+
+Now that you’ve chosen your approach and prepared your workspace, you can proceed to make the necessary changes for your contribution.
+
+### Step 2: Make Changes
+
+For axe-core, I followed the project’s instructions to generate a new locale file by running:
 ```bash
 npx grunt translate --lang=ru
 ```
 
-After that, the `ru.json` file appeared in the `locales` folder. All English text needed to be translated to Russian. That work might be time-consuming due to the amount of text. In my case, it was approximately 1,000 lines. 
-
-I used automated translation tools and reviewed it manually since the target language is my native one. 
-
-After the work is done, you need to commit locally and publish your changes to the GitHub repository. You can do it with just a few button clicks in the **Source Control** tab. 
+This created a new `ru.json` file in the `locales` folder. My task was to translate all the English text into Russian. Automated translation tools helped speed up the process, but I manually reviewed everything to ensure accuracy.
 
 ---
 
-### Submit Pull Request
+### Step 3: Commit and Push Changes
 
-Once the branch is on the remote repository, you can create a pull request. This is a request to repository maintainers to include (merge) your changes into the main branch. Once changes are merged, sooner or later, they will be published with a new application version and downloaded by developers across the world. 
+1. Go to the **Source Control** tab in VSCode.
+2. Stage your changes by clicking the `+` button next to the modified files.
+3. Add a commit message, like `Add Russian locale`, and click **Commit**.
+4. Push your changes to the remote repository by clicking the **Sync Changes** button in the bottom-right corner.
 
-You need to look at naming conventions for such requests and add a meaningful description.
+---
+
+### Step 4: Submit a Pull Request
+
+Once your changes are pushed, open your forked repository on GitHub and click **Compare & Pull Request**. Add a clear title and description explaining your changes, then submit the pull request.
 
 <img src="pr_prepare.png">
 
 ---
 
-## Maintainers' Review and Merge
+## Maintainers’ Review and Merge
 
-Preparing a pull request is only half of the work, and this half is the most enjoyable. The review process can be a painful thing; sometimes it is slow and full of hard discussions. Luckily, my change was not technical, so I thought it would be easy. :)
+Submitting the pull request is only half the work. The review process can be challenging, as maintainers might request changes or raise questions. Here’s how to navigate it:
 
-After a few days of waiting, I checked how long it took to review previous localization requests. I found a few changes done pretty quickly, but another localization was stuck for half a year. 
+1. **Be Patient**: Reviews take time, especially for large or non-critical changes.
+2. **Respond Quickly**: If maintainers request changes, address them promptly to keep the process moving.
+3. **Be Polite and Clear**: If you disagree with feedback, explain your reasoning respectfully.
 
-I decided to wait a few more days and start softly pushing the review process. You have to be creative and gentle, especially if you are contributing for the first time to a project, much like when you enter and meet a new group of people who know each other but not you. 
-
----
-
-### My Approach
-
-I went two ways:
-- I asked my colleagues to like my PR (pull request). You may see in the picture above that I collected 20!
-- On the GitHub profile of one of the most active developers, I found their email and wrote a message about myself and my motivation to contribute to my work toolset.
-
-After that, I got a comment from that developer. They requested a small change, and I immediately did it. During the review, you should not blindly accept other developers’ change suggestions. Instead, try to explain and defend your implementation with arguments. All developers may make mistakes, even the most experienced ones. 
-
-Also, you have to understand the context. In my case, I’m a guest in that project. 
-
-The review went fine, and the last bit was tests and automatic checks. Somehow, a few pipelines were failing on my branch. I’m not sure why because I had not touched the code. It may be the case that these pipelines are flaky or they were broken by someone else at the point when I forked the repository. 
-
-I will never know because, right after approval, a developer from the maintainers’ team merged it. A month later, it was taken into release. 
+For my localization task, the review process was straightforward. A maintainer requested a small adjustment, which I completed quickly. However, some automated tests failed due to unrelated issues in the pipeline. Thankfully, the maintainer merged my changes anyway, and they were included in the next release.
 
 ---
 
-## Bonus
+## Bonus: Scaling Your Contribution
 
-When I was testing the translation command:
-```bash
-npx grunt translate --lang=ru
-```
+While working on the translation task, I noticed that several locales were outdated. This is a common problem in OSS projects, as text changes often go unchecked by automated tools. You can make a meaningful impact by updating translations or fixing small inconsistencies.
 
-I found that many of the other locales are outdated. This is a constant problem for every text in the code that is not checked by a compiler. Maintainers also have limited resources, so you can easily repeat my steps for any locale, and there will be messages that are outdated. 
+Take axe-core as an example: it’s downloaded 16 million times per week. Even a minor contribution like improving translations can help thousands of developers and users. So, don’t underestimate the value of small but meaningful changes.
 
-That may look like a very small contribution, but look at the scale of axe-core. It is downloaded 16,000,000 times weekly, according to NPM stats. So, even with such little effort, you can make the world better.
+---
+
+## Final Thoughts
+
+Contributing to OSS might seem intimidating at first, but it’s a rewarding experience. Start small, be consistent, and remember: even a tiny improvement can make a big difference in the world of open-source software.
+
