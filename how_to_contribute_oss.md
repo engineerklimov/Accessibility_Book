@@ -23,7 +23,9 @@ According to [GitHub 2024 Octoverse](https://github.blog/news-insights/octoverse
 > *"There are three kinds of lies: lies, damned lies, and statistics."* — Mark Twain  
 > *"TypeScript (TS) is a superset of JavaScript (JS), developed and maintained by Microsoft as an open-source programming language."* — Google  
 
-So, I would not say that JavaScript is beaten by Python. 
+TypeScript is essentially extended JavaScript—it’s like English text with commas. You can write without commas, and it will still be English text, just less structured.
+
+Looking at the chart, JavaScript and TypeScript might seem like two separate entities, but they’re really the same language. Together, they dominate the ecosystem. So, I wouldn’t say Python has beaten JavaScript.
 
 According to the logic described above, my choice for OSS contribution will be JavaScript and NodeJs as a platform. My primary area of knowledge is Accessibility tools. I’m also working as a software tester. With this in mind, the best for me would be to contribute to some accessibility tool that is related to testing and written in JavaScript. I know these tools a little, so I will go directly to [axe-core](https://github.com/dequelabs/axe-core). 
 
