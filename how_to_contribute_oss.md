@@ -1,7 +1,7 @@
 # Contribute to (OSS) Open source software
-All of us using OSS, more over most of the software we use is based on oss. Routine process of development is picking packages from platform sources for example npm if you are developing java script program and writing some ligth glue code for that to make work your app. This is nature of software development because of one the base pricinples "DRY" - do not repeat yoursesf. Folloiwng that principle developers try to reuse every piece of code that is repeated. It is become hard to find this pieces because many developers already did that work. Also when piece of software is done by developer who realy love his work it is polished, and done with best efforts. With all that things in mind, it becomes really hard to put something valueable to public or contribute to project that is already used by many developers for person without years of developement experience or someone from IT but non developers like software testrs or designers. Another hand that pushed me to that direction is my colleges expertise, In conversations with a good friend of mine who is HR and one of the developers, who frequently conducts technical interviews I got some insight regarding how public work may transform interview process. From their experience OSS contribution is a rare, it will raise curiosity for sure. You may shift interview towards your area of expertise and leave a good impression even if you will be innacurate in your answers in required areas.
+All of us using OSS, more over most of the software we use is based on oss. Routine process of development is picking packages from platform sources for example npm if you are developing java script program and writing some ligth glue code for that to make work your app. This is nature of software development because of one the base pricinples "DRY" - do not repeat yoursesf. Folloiwng that principle developers try to reuse every piece of code that is repeated. It is become hard to find this pieces because many developers already did that work. Also when piece of software is done by developer who realy love his work it is polished, and done with best efforts. With all that things in mind, it becomes really hard to put something valueable to public or contribute to project that is already used by many developers for person even with few years of developement experience (middle or senior developers) or experts from close areas who never contributed directly. Another hand that pushed me to that direction is my colleges expertise, In conversations with a good friend of mine who is HR and one of the developers, who frequently conducts technical interviews I got some insight regarding how public work may transform interview process. From their experience OSS contribution is a rare, it will raise curiosity for sure. You may shift interview towards your area of expertise and leave a good impression even if you will be innacurate in your answers in required areas.
 
-While this stair is high for beginner, such contributon may become a good starter for developer carier. It also looks very impressive in CV because all developers have some kind of pet projects but iusually they to shy to put it on public. Purpose of this guide is to help beginners to step on that stair.
+While this stair is high, such step may become very usefull experience. It also looks very impressive in CV because all developers have some kind of pet projects but iusually they to shy to put it on public. Purpose of this guide is to help you to step on that stair.
 
 ## Choosing tech and project
 From practical point of view it is alway better to stay with most popular technology because of larger communit there will be large amout of edge cases solved, bigger toolset and more documentatios, it is till humans writing code so more humans more code =). According to [github 2024 octoverse](https://github.blog/news-insights/octoverse/octoverse-2024/) Python beats JavaScript as most popular language. 
@@ -43,7 +43,6 @@ While developing software you need to use other developers code in your otherwis
 <img src="dependency_graph_example.webp"> 
 
 ## Discover choosen project
-
 First of all you need a github account, this days is like facebook for developers, I already have it https://github.com/engineerklimov. I will create copy of [axe core](https://github.com/dequelabs/axe-core) in terms of git is called fork.
 
 Lets donwload source code from mine axe core fork and try some basic operations. As i explained before you dont need to know all git command to use it probbaly you can event avoid its shell. Open vscode and navigate as shown in picture, in text field choose clone from github ot copypaste repository url.
@@ -68,26 +67,37 @@ Valid `npm run build` output
 <img src="npm_build.png">
 
 ## Find contribution target
-
 Where to look for? There is 3 sources: 
 
 ### Repository issues
-
 This is worklog for project it also contais reported bugs and etc, usually issues marked with labels. It is better to check entire [list](https://github.com/dequelabs/axe-core/labels), I found `good first issue` and `help wanted` that may fit for my porposes. There is few on each label. I quickly checked them and found one that is pretty well descripted I had no idea what need to be done technically but atleast I undestood requirements. Maintainers pointed to files where this changes need to be done, this is already part of techical work since I have no idea about project structure. I decided to spent more time and look for something completely dumb to contribute, just to try.
 
 ### Past contributions from non maintainers
-
 Another place to look is [closed pull requests](https://github.com/dequelabs/axe-core/pulls?q=is%3Apr+is%3Aclosed). You need to filter out work done by main project developers as it is migth be too complex to follow. I cheked first 3 pages and found closed pull request that is very promising for me [chore: Update locale de.json](https://github.com/dequelabs/axe-core/pull/4525). It is a localization improvement for error messages, usually localisations is static resources for applications that contains collections of messages templates. That templates used in code to show messages in different languages. It is searial change so I can look at any existing and repeat it, I also found a good instruction and main repository document [readme.md](https://github.com/dequelabs/axe-core?tab=readme-ov-file#localization). So that will be my task: 'Add ru locale'
 
 ## Prepare pull request
-
 Lets add a nex locale for axe-core. First step is to make our own repository version. There is two ways:
 
 1. You can make branch in the main repository. Click on left bottom corner on current branch name `develop`, choose `Create new branch...` click and type branch name. It is better to not use special characters in branch names.
-2. There migth be polisies on branch names or new branches may be restricted for everyone. In such case you can create a fork from main repository and 
+2. There migth be polisies on branch names or new branches may be restricted for everyone. In such case you can create a fork from main repository and make your chages and create pull request from fork to main repo. 
 
 <img src="make_branch.png">
 
+The change itself is not complex, I followed instrcutions in repository root a called `npx grunt translate --lang=ru` after that ru.json file is appeared in locales folder. All english text need to be translated to Russian, that work migth be time consuming due to amount of text in my case it was approximately 1000 lines. I used automated translation tools and revieved it manually since target language is my native. After work is done you need to commit to localy and publish your chnages to github repository. You can do it only with button clicks in source control tab. 
 
+Once branch is on remote repository you can create a pull reuqest. This is request to repositry maintainers to include (merge) your changes to main repository branch, once cchages is merged soon or later they will be published with new application version and downloaded by other developers across the world. You have to look at what is naming conventions for such requests and add meaningfull description.
+
+<img src="pr_prepare.png">
 
 ## Maintainers review and merge
+Preparing pull request is only half of the work and this half is most pleasure. Review process may be a painfull thing sometimes it is slow and full of hard discussions. Luckily my change is not technical i thinked it would be easy :) After few days of waiting I checked how long it took to review previous localization request. I found few chnages done pretty quick and another localization stuck for a half of year. I decided to wait few days more and start softly pushing review process. You have to be creative and gentle especially if you contributing first time to the project same way like when you enter and meet a new group of people who know each other but not you. I went 2 ways 
+
+- I asked my colleges to put a like on my PR (pull request), you may see on picture above I collected 20!
+- On github profile of one of most active developers I took email and wrote a message about myself and my motivation to make a contribution to my work toolset.
+
+After that I got comment from that developer, he requested small chnage and I immediately did it. During review you should not blindly accept other developers change suggestions instead try to explain and protect your implementation with argumentation all developers may do mistakes even most experienced. Also you have to understand context, in my case im a guest in that project. Review went fine and last bit is tests and automatic checks, somehow few pipelines were failing on my branch, im not sure why because i have not touched code. It maybe the case that this pipelines are flaky or they may be broken by someone else at the poit when i forked repository. I will never know because rigth after approval developer from maintainers team merged it and month later it was taken into release. 
+
+## Bonus
+When I was testing translation command `npx grunt translate --lang=ru` I found that many of other locales are outdated. This is constant problem for every text in code that is not checked by compiler. Maintainers have also limited resouces so you can easily repeat my steps for any locale and there will be messages that are outdated. That may look as very little contribution, but look at scale of axe core. It is downloaded 16 000 000 times weekly according to NPM stats. So even with such little efforts you can make world better.
+
+
