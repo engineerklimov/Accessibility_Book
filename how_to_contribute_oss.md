@@ -131,11 +131,11 @@ Where should you look for a task to contribute to? Here are the three best optio
 
 ### Repository Issues
 
-Repository issues are like the project’s to-do list. They include reported bugs, feature requests, and other tasks. Most projects use labels to categorize issues. For example, in [axe-core](https://github.com/dequelabs/axe-core), you’ll find labels like ``good first issue`` or ``help wanted``. These are beginner-friendly and a great place to start.
+Repository issues are like the project’s to-do list. They include reported bugs, feature requests, and other tasks. Most projects use labels to categorize issues. For example, in [axe-core](https://github.com/dequelabs/axe-core), you’ll find labels like ``good first issue`` or ``help wanted``. These are more beginner-friendly and a great place to start.
 
-During my search, I found a ``good first issue`` that was well described. The maintainers pointed to specific files and explained what needed to be done, which made it a great starting point for understanding the project’s structure.
+Earlier, during my search, I found a ``good first issue`` that was well described. The maintainers pointed to specific files and explained what needed to be done, which made it a great starting point for understanding the project’s structure.
 
-However, while continuing to explore, I came across an even simpler task: updating a localization file. This task required minimal technical knowledge and seemed like the perfect opportunity to make my first contribution. I decided to set aside the initial issue as a backup and focused on the localization task instead, as it allowed me to dive right in without overthinking the technical details.
+However, while continuing to explore, I came across an even better fit for me: updating a localization file. This task required less technical knowledge and seemed like the perfect opportunity to make my first contribution to the project. I decided to set aside the initial issue as a backup and focused on the localization task instead, as it allowed me to dive right in without overthinking the technical details.
 
 ---
 
